@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo List</title>
+    <link rel="stylesheet" text="text/css" href="/css/todo.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <script type="text/javascript" src="./assets/js/lib/code.jquery.com_jquery-3.7.0.min.js"></script>
+</head>
+<body>  
+    <div class="container">
+        <div class="todo-box">
+            <header class="heading">To Do List</header>
+            <div class="inputbox">
+                <i class="icon uil uil-file-check-alt"></i><!-- file icon  -->
+                <input type="text" placeholder="Type your To Do List">
+                <i id="addbutton" class="icon uil uil-plus"></i><!-- Add (plus) icon  -->
+            </div>
+            <div class="clckbutton">
+                <span class=" btn clearall">Clear all task</span>
+                <span class=" btn clearcomtask">Clear Complete</span>
+            </div>
+            <hr>
+            <ul class="itemlist"></ul><!-- Empty Unorder Todolist for add list item -->
+            <hr>
+            <div class="clckbutton">
+                <span>
+                    <span class="pendingTasks"></span><!--Empty span for task count -->
+                    tasks left</span>
+                <div>
+                    <span class="pendingTasks" >All</span>
+                    <span class=" btn">Complete</span>
+                    <span class=" btn">Incomplete</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript" src="js/todo.js"></script>
+</body>
+</html>
